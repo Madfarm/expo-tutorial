@@ -14,7 +14,7 @@ import {
 export default function Index() {
   const [input, setInput] = useState('')
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView className="flex-1 bg-gray-300">
       <View
         style={[
           styles.imgContainer,
