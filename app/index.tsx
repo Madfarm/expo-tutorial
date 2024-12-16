@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import { Link } from 'expo-router'
 import {
   Text,
   View,
   ScrollView,
   Image,
   StyleSheet,
-  TextInput
+  TextInput,
 } from "react-native";
 
 
@@ -21,6 +22,7 @@ export default function Index() {
             flexDirection: 'row',
           },
         ]}>
+        <Link href="/profile" style={{ color: 'blue'}}>Go to Profile</Link>
         <Image
           source={
             require('./assets/images/react-logo.png')
